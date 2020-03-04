@@ -1,0 +1,677 @@
+<!-- INLINE -->
+<!DOCTYPE html>
+<html lang="eng">
+	<head> 
+		<title> Inline Style </title>
+	</head> 
+	
+	<body>
+		<!-- Menggunakan Embedded Style pada paragraf -->
+		<p style="color:red; font-style:itlic">
+		Ini paragraf pertama
+		
+		<!-- menerapkan embedded style pada paragraf -->
+		<p style="color:blue; font-weight:bold">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		
+		<p>
+		Ini paragraf ketiga
+	</body>
+</html>
+
+
+
+<!-- EMBEDDED -->
+<!DOCTYPE html>
+<html lang="eng">
+	<head> 
+		<title> Embedded Style </title>
+		<style type="text/css">
+		<!-- 
+		p{
+			color:red;
+			font-style: italic;
+		}
+		-->
+		</style>
+	</head> 
+	
+	<body>
+		<!-- Menggunakan Embedded Style pada paragraf -->
+		<p>
+		Ini paragraf pertama
+		
+		<!-- menerapkan embedded style pada paragraf -->
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		
+		<p>
+		Ini paragraf ketiga
+	</body>
+</html>
+<!-- EMBEDDED  2  -->
+<!DOCTYPE html>
+<html lang="eng">
+	<head> 
+		<title> Embedded Style </title>
+		<style type="text/css">
+		
+		.style1 {
+			color:red;
+			font-style: italic;
+		}
+		#style2 {
+			color:blue;
+			font-style:bold;
+		}
+		
+		</style>
+	</head> 
+	
+	<body>
+		<!-- Menggunakan Embedded Style pada paragraf -->
+		<p class="style1">
+		Ini paragraf pertama
+		
+		<!-- menerapkan embedded style pada paragraf -->
+		<p id="style2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		
+		<p class="style1">
+		Ini paragraf ketiga
+	</body>
+</html>
+
+<!-- LINKED -->
+	.style1 {
+			color:red;
+			font-style: italic;
+		}
+		#style2 {
+			color:blue;
+			font-style:bold;
+		}
+
+<!DOCTYPE html>
+<html lang="eng">
+	<head> 
+		<title> Linked Style </title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		
+	</head> 
+	
+	<body>
+		<!-- Menggunakan Embedded Style pada paragraf -->
+		<p class="style1">
+		Ini paragraf pertama
+		
+		<!-- menerapkan embedded style pada paragraf -->
+		<p id="style2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		
+		<p class="style1">
+		Ini paragraf ketiga
+	</body>
+</html>
+
+
+<!-- STYLE FONT -->
+<!DOCTYPE html>
+<html lang="eng">
+	<head> 
+		<title> Style Font </title>
+		
+		<style type="text/css">
+		<!-- 
+		.style_font {
+			font-famnily: Georgia;
+			font-size: 18px;
+			font-style: italic;
+			font-weight: bold;
+			text-decoration: underline;
+			color: red;
+		} 
+		-->
+		</style>
+		
+		
+	</head> 
+	
+	<body>
+		<!-- Menggunakan Embedded Style pada paragraf -->
+		<p class="style_font">
+		Ini paragraf pertama
+		
+		<!-- menerapkan embedded style pada paragraf -->
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		
+	</body>
+</html>
+
+
+<!-- MENGATUR SPASI STYLE CSS -->
+<style type="text/css">
+<!--
+.style_font {
+line-height: 36px;
+}
+-->
+</style>
+
+
+<!-- BORDER -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Style Sheet</title>
+		<style type="text/css">
+		<!--
+			.border1 {
+			border: 1px solid red;
+		}
+			.border2 {
+			border: 1px dashed red;
+		}
+			.border3 {
+			border: 1px dotted red;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<p class="border1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		
+		<p class="border2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		
+		<p class="border3">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+	</body>
+</html>
+
+
+
+<!-- PADDING -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Style Sheet</title>
+		<style type="text/css">
+		<!--
+		.border1 {
+			border: 1px solid red;
+			padding: 10px;
+		}
+		.border2 {
+			border: 1px solid red;
+			padding: 20px 10px 5px 40px;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<p class="border1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		
+		<p class="border2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+	</body>
+</html>
+
+
+<!-- LIST -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Style List</title>
+		<style type="text/css">
+		<!--
+		#leftmenu ul {
+			width: 200px;
+			list-style-type:none;
+			padding:0; margin:0;
+		}
+		#leftmenu a:link, #leftmenu a:visited, #leftmenu a:active {
+			padding-left: 15px;
+			text-decoration: none;
+		}
+		#leftmenu a {
+		padding: 5px 0px 5px 15px; display: block;
+			background: #6cae15 no-repeat left center;
+			margin: 0px 0px 1px; color: #ffffff;
+		}
+		#leftmenu a:hover {
+			background: #5e9711 no-repeat left center; color: #ffffff	
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		List Normal
+		<ul>
+		<li>Satu</li>
+		<li>Dua</li>
+		</ul>
+		<hr />
+		Style List
+		<div id="leftmenu">
+		<ul>
+		<li><a href="#">Menu Satu</a></li>
+		<li><a href="#">Menu Dua</a></li>
+		<li><a href="#">Menu Tiga</a></li>
+		</ul>
+		</div>
+	</body>
+</html>
+
+
+<!-- DIVISION UKURAN AREA -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Demo Ukuran Division</title>
+		<style type="text/css">
+		<!--
+		.box1 {
+			width: 200px;
+			height: 50px;
+			background: grey;
+			border: 1px solid red;
+		}
+		.box2 {
+			margin: 10px;
+			padding: 10px;
+			width: 400px;
+			height: 100px;
+			border: 1px solid red;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+		Paragraf ini di dalam tag &lt;div&gt;
+		</div>
+		
+		<div class="box2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		</div>
+	</body>
+</html>
+
+
+
+<!-- DIVISION POSISI AREA -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Demo Posisi Division</title>
+		<style type="text/css">
+		<!--
+		.box1 {
+			float: left;
+			width: 200px;
+			height: 50px;
+			background: grey;
+			border: 1px solid red;
+		}
+		.box2 {
+			float: right;
+			padding: 10px;
+			width: 300px;
+			height: 100px;
+			border: 1px solid red;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+		Paragraf ini di dalam tag &lt;div&gt;
+		</div>
+		
+		<div class="box2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+<!-- MERESET ATRIBUT FLOAT -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Demo Posisi Division</title>
+		<style type="text/css">
+		<!--
+		.box1 {
+		float: left;
+		width: 200px;
+		height: 50px;
+		background: grey;
+		border: 1px solid red;
+		}
+		.box2 {
+		float: right;
+		padding: 10px;
+		width: 300px;
+		height: 100px;
+		border: 1px solid red;
+		}
+		.box3 {
+		/* me-reset pengaturan float left maupun right */
+		clear: both;
+		float: left;
+		width: 200px;
+		height: 50px;
+		background: grey;
+		border: 1px solid red;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+		Paragraf ini di dalam tag &lt;div&gt;
+		</div>
+		<div class="box2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat.
+		</div>
+		<div class="box3">
+		Paragraf ini di dalam tag &lt;div&gt;
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+<!-- MEMBUAT BORDER -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Demo Rounded Border</title>
+		<style type="text/css">
+		<!--
+		.round {
+		background-color: #ddccb5;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: 2px solid #897048;
+		padding: 10px;
+		width: 310px;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<div class="round">
+		Gampang sekali lho bikin rounded border :-)
+		</div>
+		<br />
+		<div class="round">
+		Pembuatan rounded border menggunakan CSS3 memang sangat mudah.
+		Tidak perlu file gambar sama sekali, seperti pada CSS sebelumnya
+		</div>
+	</body>
+</html>
+
+
+<!-- STUDI KASUS MODUL 4 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Studi Kasus</title>
+		<style type="text/css">
+		<!--
+		.lingkaran {
+		background-color: steelblue;
+		-moz-border-radius: 700px;
+		-webkit-border-radius: 150px;
+		border: 3px solid #000000;
+		padding: 50px;
+		width: 200px;
+		height: 200px;
+		}
+
+		.kotak1 {
+		padding: 50px;
+		border: 3px solid teal;
+		width: 200px;
+		height: 50px;
+		background: silver;
+		border-bottom-right-radius: 50px;
+		border-top-left-radius: 50px;
+		}
+
+		.kotak2{
+		border: 2px solid grey;
+		padding: 10px;
+		width: 300px;
+		background: steelblue;
+		text-align: italic;
+		box-shadow: 3px 3px 0px 0px grey;
+		}
+
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<div align="center" class="lingkaran">
+		Akhirnya saya bisa membuat lingkaran 
+		Alhamdulillah
+		Yeayyyy</div>
+		<br />
+		<br />
+		<div align="center" class="kotak1">
+		Ini adalah bentuk kotak </div>
+		<br />
+		<br />
+		<div align="center" class="kotak2">
+		Wowww kotak nya ada shadow nyaaaa</div>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MODUL 5 -->
+
+<!-- MEMBUAT STYLE (.CSS) -->
+#wrapper {
+	margin: auto;
+	width: 750px;
+	border: 1px solid red;
+}
+#header {
+	height: 80px;
+	border: 1px solid blue;
+}
+#inner {
+	float: left;
+	margin: 5px 0;
+	border: 1px solid black;
+}
+#sidebar {
+	float: left;
+	margin-right: 20px;
+	width: 180px;
+	height: 330px;
+	border: 1px solid red;
+}
+#content {
+	float: left;
+	width: 544px;
+	height: 330px;
+	border: 1px solid green;
+}
+#footer {
+	clear: both;
+	height: 50px;
+	border: 1px solid blue;
+}
+
+
+<!-- MEMBUAT LAYOUT DARI STYLE -->
+<!DOCTYPE HTML>
+<html lang="id">
+	<head>
+		<title>Desain Layout Sederhana</title>
+		<link rel="stylesheet" href="mystyle.css" type="text/css" />
+	</head>
+	<body>
+		<div id="wrapper">
+		<div id="header">
+		Header
+		</div>
+		<div id="inner">
+		<div id="sidebar">
+		Sidebar
+		</div>
+		<div id="content">
+		Content
+		</div>
+		</div>
+		<div id="footer">
+		Footer
+		</div>
+		</div>
+	</body>
+</html>
+
+
+<!-- MEMBUAT STYLE2 (.CSS) -->
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Desain Layout Sederhana HTML5</title>
+		<link rel="stylesheet" href="mystyle2.css" type="text/css" />
+	</head>
+	<body>
+		<header>
+		header
+		</header>
+		<nav>
+		nav
+		</nav>
+		<section>
+		section
+		</section>
+		<footer>
+		footer
+		</footer>
+	</body>
+</html>
+
+
+<!-- MEMBUAT BACKGROUND WARNA -->
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<title>Desain Background</title>
+		<style>
+			body {
+			background-color: yellow;
+			margin: 10px auto;
+			width: 750px;
+			}
+			header {
+			display: block;
+			border: 1px solid blue;
+			}
+			header {
+			height: 120px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+		header
+		</header>
+	</body>
+</html>
+
+
+<!-- MEMBUAT BACKGROUND GAMBAR -->
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<title>Desain Background</title>
+		<style>
+		body {
+		background: yellow url("motif.png");
+		margin: 10px auto;
+		width: 750px;
+		}
+		header {
+		display: block;
+		border: 1px solid blue;
+		}
+		header {
+		height: 120px;
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+		header
+		</header>
+	</body>
+</html>
