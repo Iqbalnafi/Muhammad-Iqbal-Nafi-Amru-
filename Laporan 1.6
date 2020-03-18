@@ -1,0 +1,171 @@
+<!-- MENGGUNAKAN MEDIA QUERY -->
+<! DOCTYPE html>
+<html lang="id">
+	<head> 
+		<title> Menggunakan Media Query CSS 3 </title>
+		<style>
+		
+			/** Pengaturan default display none **/
+			.smartphone {
+				display: none;
+			}
+			
+			/** Media query untuk smartphone 375px **/
+			@media only screen and (max-width: 375px) {
+				body {
+				background-color: cadetblue;
+				}
+				.smartphone {
+				display: block;
+				}
+			}
+		</style>
+	</head>
+	
+	<body> 
+		<h3> Menggunkan Media Query CSS3</h3>
+		
+		<div class="smartphone">
+		<h2>Terdeteksi ukuran smartphone</h2>
+		</div>
+	</body>
+</html>
+
+
+
+
+<!-- DESAIN HALAMAN WEB RESPONSIF -->
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<title>Desain Responsive</title>
+		<style>
+		#wrapper {
+		margin: auto;
+		width: 100%;
+		}
+		#header {
+		height: 150px;
+		padding: 20px;
+		border: 2px solid green;
+		}
+		#nav {
+		margin: auto;
+		padding: 20px;
+		height: 200px;
+		border: 2px solid cadetblue;
+		}
+		.box {
+		float: left;
+		width: 22%;
+		margin: 0 2% 0 0;
+		height: 120px;
+		background: pink;
+		border: 2px solid cadetblue;
+		}
+		#footer {
+		padding: 20px;
+		height: 120px;
+		border: 2px solid black;
+		}
+		/** Responsif tablet **/
+		@media only screen and (max-width: 768px) {
+		#nav {
+		height: 360px;
+		}
+		/** atur box 2 kolom **/
+		.box {
+		width: 45%;
+		margin: 0 4% 20px 0;
+		}
+		}
+		/** Responsif smartphone **/
+		@media only screen and (max-width: 375px) {
+		#nav {
+		height: 640px;
+		}
+		/** atur box 1 kolom **/
+		.box {
+		width: 100%;
+		margin: 0 0 20px 0;
+		}
+		}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+		<div id="header">
+		<h2 align="center">Header</header>
+		</div>
+		<div id="nav">
+		<h2 align="center">Services</h2>
+		<div class="box" align="center">
+		<br />
+		BOX 1
+		</div>
+		
+		<div class="box" align="center">
+		<br />
+		BOX 2
+		</div>
+		
+		<div class="box" align="center">
+		<br />
+		BOX 3
+		</div>
+		
+		<div class="box" align="center">
+		<br />
+		BOX 4
+		</div>
+		</div>
+		
+		<div id="footer">
+		<h2 align="center">Footer</h2>
+		</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+<!-- ANIMASI TRANSISI -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animasi Transisi CSS3</title>
+		<style>
+			/* Kondisi box awal */
+			.box {
+			width: 40%;
+			height: 100px;
+			background: orange;
+			border: 2px solid #212121;
+			
+			/* Animasi lebar box */
+			-webkit-transition: width 1s ease-in-out;
+			-o-transition: width 1s ease-in-out;
+			-moz-transition: width 1s ease-in-out;
+			transition: width 1s ease-in-out;
+			}
+			
+			/* Jika landscape, perlebar 100% */
+			@media (orientation:landscape) {
+				.box {
+				width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h3>Transisi CSS3</h3>
+		<div class="box"></div>
+		<p>
+			Ubah orientasi ke landscape/portrait dan sebaliknya
+			untuk melihat efek transisi
+		</p>
+	</body>
+</html
