@@ -1,0 +1,361 @@
+<!-- MEMBUAT KODE PROGRAM PHP -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Demo PHP di HTML</title>
+	</head>
+	<body>
+		<?php
+			echo 'Kode PHP di sini';
+			// ...
+		?>
+		<p> Dokumen HTML </p>
+		<?php
+			echo 'Kode PHP di sini';
+			// ...
+		?>
+	</body>
+</html>
+
+
+
+<!-- MEMBUAT SHORTCUT PHP DI HTML -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Demo Shortcut PHP di HTML</title>
+	</head>
+	<body>
+		<p> Kode <?php echo "PHP";?> di HTML </p>
+	</body>
+</html>
+
+
+
+<!-- MEMBUAT VARIABEL DENGAN KARAKTER DOLAR ($) -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Demo Variabel</title>
+	</head>
+	<body>
+		<?php
+			// Deklarasi dan inisialisasi
+			$bil = 5;
+			echo $bil;
+			
+		?>
+	</body>
+</html>
+
+
+
+<!-- MEMBUAT VARIABEL DENGAN VAR_DUMP() ATAU PRINT_R() -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Demo Variabel dengan Fungsi var_dump() atau print_r()</title>
+	</head>
+	<body>
+		<?php
+			// Deklarasi dan inisialisasi
+			$bil = 7;
+			// Dumping informasi mengenai variabel
+			var_dump($bil);
+			print_r($bil);
+		?>
+	</body>
+</html>
+
+
+<!-- MEMBUAT VARIABEL DENGAN KONSTRUKSI ISSET() -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Demo Variabel dengan Fungsi isset() </title>
+	</head>
+	<body>
+		<?php
+			$bil = 4;
+			var_dump($bil);
+			// Output: int(4)
+			
+			$var = "";
+			var_dump($var);
+			// Output: string(0) ""
+			
+			$var = null;
+			var_dump($var);
+			// Output: NULL
+			
+		?>
+	</body>
+</html>
+
+
+<!-- MEMBUAT TIPE DATA BERAWALAN IS_ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cek Tipe</title>
+	</head>
+	<body>
+		<?php
+			$bil = 8;
+			var_dump(is_int($bil));
+			// Output: bool(true)
+			
+			$var = "";
+			var_dump(is_string($var));
+			// Output: bool(true)
+		?>
+	</body>
+</html>
+
+
+
+<!-- MEMBUAT CASTING -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Casting Tipe</title>
+	</head>
+	<body>
+		<?php
+		$str = '123abc';
+		// Casting nilai vaiabel $str ke integer
+		
+		$bil = (int) $str; // $bil = 123
+		echo gettype($str);
+		// Output: string
+		
+		echo gettype($bil);
+		// Output: integer
+		?>
+	</body>
+</html>
+
+
+
+<!-- MEMBUAT PERNYATAAN IF -->
+<html lang="en">
+	<head>
+		<title>Seleksi Pernyatan if </title>
+	</head>
+	<body>
+		<?php
+		$a = 8;
+		$b = 4;
+		
+		if ($a > $b) {
+		echo 'a lebih besar dari b';
+		}
+		?>
+	</body>
+</html>
+
+
+<!-- MEMBUAT PERNYATAAN IF ELSE -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Seleksi if-else</title>
+	</head>
+	<body>
+		<?php
+		$a = 9;
+		$b = 5;
+		
+		if ($a > $b) {
+		echo 'a lebih besar dari b';
+		} 
+		else {
+		echo 'a TIDAK lebih besar dari b';
+		}
+		?>
+	</body>
+</html>
+
+
+<!--MEMBUAT PERNYATAAN IF ELSE IF -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Seleksi if-elseif</title>
+	</head>
+	<body>
+		<?php
+		$a = 11;
+		$b = 5;
+		
+		if ($a > $b) {
+		echo 'a lebih besar dari b';
+		} 
+		elseif ($a == $b) {
+		echo 'a sama dengan b';
+		} 
+		else {
+		echo 'a kurang dari b';
+		}
+		?>
+	</body>
+</html>
+
+
+
+<!-- MEMBUAT PERNYATAAN SWITCH -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Seleksi switch</title>
+	</head>
+	<body>
+		<?php
+		$i = 0;
+		if ($i == 0) {
+		echo "i equals 0";
+		} 
+		elseif ($i == 1) {
+		echo "i equals 1";
+		} 
+		elseif ($i == 2) {
+		echo "i equals 2";
+		}
+		
+		// Ekuivalen, dengan pendekatan switch
+		switch ($i) {
+			case 0:
+				echo "i equals 0";
+				break;
+			case 1:
+				echo "i equals 1";
+				break;
+			case 2:
+				echo "i equals 2";
+				break;
+		}
+		?>
+	</body>
+</html>
+
+
+
+<!-- MEMBUAT PENGULANGAN WHILE -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Loop while</title>
+	</head>
+	<body>
+		<?php
+		$i = 0;
+		
+		while ($i < 15) {
+		echo $i;
+		
+		// Inkremen counter
+		$i++;
+		}
+		?>
+	</body>
+</html>
+
+
+
+<!-- MEMBUAT PENGULANGAN DO-WHILE -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Loop do-while</title>
+	</head>
+	<body>
+		<?php
+		$i = 0;
+		do {
+		echo $i;
+		// Inkremen counter
+		$i++;
+		} while ($i < 13);
+		?>
+	</body>
+</html>
+
+
+
+<!-- MEMBUAT PENGULANGAN FOR -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Loop for</title>
+	</head>
+	
+	<body>
+		<?php
+			for ($i = 0; $i < 10; $i++) {
+			echo $i;
+			}
+		?>
+	</body>
+</html>
+
+
+<!-- MEMBUAT PENGULANGAN FOREACH -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Loop foreach</title>
+	</head>
+	<body>
+		<?php
+		$arr = array(1, 3, 5, 7);
+		
+		foreach ($arr as $value) {
+		echo $value;
+		}
+	?>
+</body>
+</html>
+
+
+
+<!-- MEMBUAT DEFINISI FUNGSI DAN PROSEDUR -->
+<?php
+	// Contoh prosedur
+	function do_print() {
+	// Mencetak informasi timestamp
+	echo time();
+	}
+	
+	// Memanggil prosedur
+	do_print();
+	
+	echo '<br />';
+	
+	// Contoh fungsi penjumlahan
+	function jumlah($a, $b) {
+	return ($a + $b);
+	}
+	
+	echo jumlah(6, 4);
+	// Output: 10
+?>
+
+
+
+<!-- MEMBUAT ARGUMEN FUNGSI DAN PROSEDUR -->
+<?php
+	/**
+	* Mencetak string
+	* $teks nilai string
+	* $bold adalah argumen opsional
+	*/
+	function print_teks($teks, $bold = true) {
+	echo $bold ? '<b>' .$teks. '</b>' : $teks;
+	}
+	
+	print_teks('Yogyakarta');
+	// Mencetak dengan huruf tebal
+	
+	print_teks('Yogyakarta', false);
+	// Mencetak dengan huruf reguler
+?>
